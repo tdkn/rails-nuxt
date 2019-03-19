@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mariadb:
+    image: 'bitnami/mariadb:latest'
+    environment:
+      ALLOW_EMPTY_PASSWORD: ${ALLOW_EMPTY_PASSWORD}
+
+  myapp:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: 'bitnami/rails:latest'
+    environment:
+      SKIP_DB_SETUP: ${SKIP_DB_SETUP}
+      DATABASE_HOST: ${DATABASE_HOST}
+    depends_on:
+      - mariadb
+    ports:
+      - ${HOST_PORT}:3000
+    volumes:
+      - .:/app
