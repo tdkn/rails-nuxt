@@ -5,6 +5,8 @@ services:
     image: 'bitnami/mariadb:latest'
     environment:
       ALLOW_EMPTY_PASSWORD: ${ALLOW_EMPTY_PASSWORD}
+    volumes:
+      - ./.docker/mariadb-persistence:/bitnami/mariadb
 
   myapp:
     tty: true # Enables debugging capabilities when attached to this container.

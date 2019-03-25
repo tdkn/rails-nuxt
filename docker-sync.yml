@@ -1,0 +1,10 @@
+version: '2'
+
+options:
+  verbose: false
+
+syncs:
+  app-native-osx-sync: # tip: add -sync and you keep consistent names as a convention
+    src: '.'
+    sync_excludes: ['.git', '.gitignore', '.docker', 'tmp/*']
+    sync_userid: '1000' # important: 1000 is bitnami user
