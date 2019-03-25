@@ -1,7 +1,8 @@
 # this is our development docker-compose building on top of the production docker-compose, just mounting
 # the sync image - not redefining anything else
 
-version: '2'
+version: '3'
+
 services:
   myapp:
     volumes:
