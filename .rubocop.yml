@@ -22,3 +22,10 @@ Style/Lambda:
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
+
+Layout/CaseIndentation:
+  IndentOneStep: true
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
