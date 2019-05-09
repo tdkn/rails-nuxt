@@ -1,0 +1,19 @@
+.btn {
+  @apply inline-block no-underline rounded py-3 px-10;
+
+  &-green {
+    @apply border border-solid border-green-dark text-green-dark;
+
+    &:hover {
+      @apply text-white bg-green-dark;
+    }
+  }
+
+  &-grey {
+    @apply border border-solid border-grey-darkest text-grey-darkest;
+
+    &:hover {
+      @apply text-white bg-grey-darkest;
+    }
+  }
+}

@@ -72,3 +72,13 @@ yarn-debug.log*
 # Docker
 /.docker
 /.docker-sync
+
+# nuxt.js build output
+.nuxt
+
+# Nuxt generate
+/dist
+/public
+
+# Service worker
+sw.*
