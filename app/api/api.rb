@@ -9,7 +9,7 @@ class API < Grape::API
 
   # Global before guard
   before do
-    doorkeeper_authorize! unless route.settings[:skip_authenticate]
+    doorkeeper_authorize! unless route.settings.dig(:auth, :disabled)
   end
 
   mount Acme::Ping
