@@ -2,18 +2,18 @@
   @apply inline-block no-underline rounded py-3 px-10;
 
   &-green {
-    @apply border border-solid border-green-dark text-green-dark;
+    @apply border border-solid border-green-600 text-green-600;
 
     &:hover {
-      @apply text-white bg-green-dark;
+      @apply text-white bg-green-600;
     }
   }
 
-  &-grey {
-    @apply border border-solid border-grey-darkest text-grey-darkest;
+  &-gray {
+    @apply border border-solid border-gray-700 text-gray-700;
 
     &:hover {
-      @apply text-white bg-grey-darkest;
+      @apply text-white bg-gray-700;
     }
   }
 }

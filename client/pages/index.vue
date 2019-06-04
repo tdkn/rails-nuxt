@@ -7,7 +7,7 @@
         <nuxt-link to="ping" class="btn btn-green">Ping</nuxt-link>
         <a
           href="https://github.com/tdkn/rails-nuxt"
-          class="btn btn-grey"
+          class="btn btn-gray"
           target="_blank"
         >
           GitHub
@@ -33,7 +33,7 @@ export default {
 }
 
 .title {
-  @apply font-sans block font-bold text-grey-darkest;
+  @apply font-sans block font-bold text-gray-700;
   font-size: 100px;
 }
 </style>

@@ -3,7 +3,7 @@
     <div>
       <code>{{ ping }}</code>
       <div class="pt-5">
-        <nuxt-link to="/" class="btn btn-grey">Home</nuxt-link>
+        <nuxt-link to="/" class="btn btn-gray">Home</nuxt-link>
       </div>
     </div>
   </section>

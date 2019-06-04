@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/tailwind.scss'],
+  css: ['~/assets/css/tailwind.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -43,7 +43,7 @@ export default {
     '@nuxtjs/dotenv', // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/axios', // Doc: https://axios.nuxtjs.org
     '@nuxtjs/pwa', // Doc: https://pwa.nuxtjs.org
-    '@/modules/spa'
+    '~/modules/spa'
   ],
   /*
    ** Axios module configuration
@@ -61,9 +61,8 @@ export default {
      */
     postcss: {
       plugins: {
-        tailwindcss: path.join(__dirname, 'tailwind.js')
-      },
-      preset: { autoprefixer: { grid: true } }
+        tailwindcss: path.join(__dirname, 'tailwind.config.js')
+      }
     },
     extend(config, ctx) {
       // Run ESLint on save
