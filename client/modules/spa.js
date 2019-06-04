@@ -9,10 +9,18 @@ export default function SpaModule() {
     return
   }
 
-  const publicPath = path.resolve('./public')
-  const distPath = path.resolve('./dist')
+  this.nuxt.hook('generate:extendRoutes', routes => {
+    const whiteList = ['/']
+    const routesToGenerate = routes.filter(page =>
+      whiteList.includes(page.route)
+    )
+    routes.splice(0, routes.length, ...routesToGenerate)
+  })
 
   this.nuxt.hook('generate:done', async () => {
+    const publicPath = path.resolve('./public')
+    const distPath = path.resolve('./dist')
+
     await fs.remove(publicPath)
     await fs.copy(distPath, publicPath)
 

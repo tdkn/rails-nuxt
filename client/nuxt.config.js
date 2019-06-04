@@ -76,15 +76,12 @@ export default {
         })
       }
     }
-  }
+  },
 
   /*
-   ** Generate configuration
-   *
-   * Example:
-   *
-   * generate: {
-   *   dir: 'public'
-   * }
+   ** Generator configuration
    */
+  generate: {
+    fallback: false
+  }
 }
