@@ -1,24 +1,23 @@
-# README
+# rails-nuxt
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> A rails-nuxt starter template
 
-Things you may want to cover:
+![license][badge-license]
+![license][badge-nuxt]
 
-* Ruby version
+[badge-license]: https://badgen.net/github/license/tdkn/rails-nuxt
+[badge-nuxt]: https://badgen.net/badge/Nuxt.js/2.8.1/03BF84
 
-* System dependencies
+## Getting started
 
-* Configuration
+```
+$ docker-compose up -d
+```
 
-* Database creation
+or if you are using [`docker-sync`](http://docker-sync.io/):
 
-* Database initialization
+> ```
+> $ docker-sync-stack start
+> ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Take a look at [the documents](https://docker-sync.readthedocs.io/en/latest/) to learn more about usage.
