@@ -14,12 +14,14 @@
 
 ```
 $ docker-compose up -d
+$ npm run dev
 ```
 
 or if you are using [`docker-sync`](http://docker-sync.io/):
 
 > ```
 > $ docker-sync-stack start
+> $ npm run dev
 > ```
 
 Take a look at [the documents](https://docker-sync.readthedocs.io/en/latest/) to learn more about usage.
