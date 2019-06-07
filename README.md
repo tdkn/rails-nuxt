@@ -3,10 +3,12 @@
 > A rails-nuxt starter template
 
 ![license][badge-license]
-![license][badge-nuxt]
+![travis][badge-travis]
+![nuxt][badge-nuxt]
 
 [badge-license]: https://badgen.net/github/license/tdkn/rails-nuxt
 [badge-nuxt]: https://badgen.net/badge/Nuxt.js/2.8.1/03BF84
+[badge-travis]: https://travis-ci.org/tdkn/rails-nuxt.svg?branch=master
 
 ## Getting started
 
