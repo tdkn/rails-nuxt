@@ -1,3 +1,6 @@
+require:
+  - rubocop-rails
+
 inherit_mode:
   merge:
     - Exclude
@@ -7,9 +10,6 @@ AllCops:
     - 'bin/**/*'
     - 'db/**/*'
     - 'config/**/*'
-
-Rails:
-  Enabled: true
 
 Metrics/MethodLength:
   Enabled: false
