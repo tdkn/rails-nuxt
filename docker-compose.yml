@@ -8,7 +8,7 @@ services:
     volumes:
       - ./.docker/mariadb-persistence:/bitnami/mariadb
 
-  myapp:
+  rails:
     tty: true # Enables debugging capabilities when attached to this container.
     image: 'bitnami/rails:latest'
     environment:
@@ -19,4 +19,4 @@ services:
     ports:
       - ${HOST_PORT}:3000
     volumes:
-      - .:/app
+      - .:/app:cached
