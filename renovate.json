@@ -3,5 +3,5 @@
     "config:base",
     ":preserveSemverRanges"
   ],
-  "labels: ["renovate"]
+  "labels": ["renovate"]
 }
